@@ -65,6 +65,6 @@ button {
     }
 
     .input-list > .input-group {
-        flex-basis: calc((100$ - 1 * 20px) / 2);
+        flex-basis: calc((100% - 1 * 20px) / 2);
     }
 }
