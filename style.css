@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    margin: 0 20px;
+    margin: 0, 20px;
 }
 
 .input-group {
@@ -44,12 +44,27 @@ button {
     gap: 30px;
 }
 
-.form-layout>* {
-    margin: ;
+.form-layout > * {
+    margin: 0, 20px;
 }
 
 @media only screen and (min-width: 678px) {
-    body {
-    
+    .form-layout > button {
+        align-self: flex-end;
+        width: 372px;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .input-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .input-list > .input-group {
+        flex-basis: calc((100$ - 1 * 20px) / 2);
     }
 }
