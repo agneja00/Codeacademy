@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nauja uzduotis</title>
+    <title>Photo Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container">
-        <form action="/index.html" method="GET">
-            <div class="form-layout">
-            <h3>Pirkejo informacija</h3>
-            <div class="input-list">
-                <div class="input-group">
-                    <label for="name" class="form-label">Vardas</label>
-                    <input type="text" id="name" name="name" class="form-input">
+    <header>
+        <article class="wrapper">
+            <h1>Photo Gallery</h1>
+        </article>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="photo-group">
+                <div class="photo-pairs">
+                    <div>
+                        <img src="/small-photo.png" alt="sphoto1">
+                    </div>
+                    <div>
+                        <img src="/big-photo.png" alt="bphoto1">
+                    </div>
                 </div>
-                <div class="input-group">
-                    <label for="pavarde" class="form-label">Pavarde</label>
-                    <input type="text" id="pavarde" name="pavarde" class="form-input">
-                </div>
-                <div class="input-group">
-                    <label for="gatve" class="form-label">Gatve</label>
-                    <input type="text" id="gatve" name="gatve" class="form-input">
-                </div>
-                <div class="input-group">
-                    <label for="miestas" class="form-label">Miestas</label>
-                    <input type="text" id="miestas" name="miestas" class="form-input">
-                </div>
-                <div class="input-group">
-                    <label for="nr" class="form-label">Namo nr.</label>
-                    <input type="text" id="nr" name="nr" class="form-input">
-                </div>
-                <div class="input-group">
-                    <label for="pkodas" class="form-label">Pasto kodas</label>
-                    <input type="text" id="pkodas" name="pkodas" class="form-input">
+
+                <div class="photo-pairs">
+                    <div class="img">
+                        <img src="/small-photo2.png" alt="sphoto2">
+                    </div>
+                    <div class="img">
+                        <img src="/big-photo2.png" alt="bphoto2">
+                    </div>
                 </div>
             </div>
-            <button>Saugoti</button>
-            </div>
-        </form>
+        </div>    
     </main>
+    
 </body>
 </html>
