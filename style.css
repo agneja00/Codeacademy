@@ -27,27 +27,11 @@ main {
     min-height: calc(100vh - 60px);
 }
 
-header nav ul li {
-    height: 38px;
-    width: 195px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 32px;
-}
-
 .wrapper {
-   padding: 10px 20px;
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .photo-group {
@@ -69,27 +53,26 @@ img {
     object-fit: cover;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen (max-width: 767) {
+    .photo-pairs:nth-child(1) div:nth-child(1) {
+        flex-basis: 125px;
+        height: 125px;
+    }
 
-.photo-pairs:nth-child(1) div:nth-child(1) {
-    flex-basis: 125px;
-    height: 125px;
-}
+    .photo-pairs:nth-child(1) div:nth-child(2) {
+        flex-basis: 205px;
+        height: 205px;
+    }
 
-.photo-pairs:nth-child(1) div:nth-child(2) {
-    flex-basis: 205px;
-    height: 205px;
-}
+    .photo-pairs:nth-child(2)>div:nth-child(2) {
+        flex-basis: 125px;
+        height: 125px;
+    }
 
-.photo-pairs:nth-child(2) > div:nth-child(2) {
-    flex-basis: 125px;
-    height: 125px;
-}
-
-.photo-pairs:nth-child(2) > div:nth-child(1) {
-    flex-basis: 205px;
-    height: 205px;
-}
+    .photo-pairs:nth-child(2)>div:nth-child(1) {
+        flex-basis: 205px;
+        height: 205px;
+    }
 }
 
 @media only screen and (min-width: 768) {
@@ -108,18 +91,31 @@ img {
 
     .photo-group {
         flex-direction: column;
-        height: 400px;
     }
 
     .photo-pairs {
-        flex-direction: column;
-        height: 340px;
+        flex-direction: row;
+        height: 400px;
     }
 
     .photo-pairs div {
         height: 400px;
-        width: ;
     }
-    
-}
 
+    .photo-pairs:nth-child(1) div:nth-child(1) {
+        flex: 2;
+    }
+
+    .photo-pairs:nth-child(1) div:nth-child(2) {
+        flex: 1;
+    }
+
+    .photo-pairs:nth-child(2)>div:nth-child(2) {
+        flex: 2;
+    }
+
+    .photo-pairs:nth-child(2)>div:nth-child(1) {
+        flex: 1;
+    }
+
+}
