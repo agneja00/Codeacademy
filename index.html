@@ -1,71 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="normalize.css">
+    <title>Landing page flex</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <article class="wrapper">
-            <h1>Photo Gallery</h1>
-        </article>
+        <nav>
+            <div class="nav-logo">
+                <img src="/Logo.png" alt="logoipsum">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">CAREERS</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="wrapper">
-            <div class="photo-group">
-                <div class="photo-pairs">
-                    <div>
-                        <img src="/small-photo.png" alt="sphoto1">
+        <article class="hero-article">
+            <div class="wrapper hero-article-layout">
+                <section class="hero-section">
+                    <img src="/cta-cover.png" alt="cover">
+                </section>
+
+                <section class="cta-description">
+                    <div class="call-to-action">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatem quaerat magnam
+                            atque, quibusdam obcaecati architecto dicta rem. Corrupti aperiam adipisci excepturi libero
+                            cumque, eius beatae magnam maxime perspiciatis repudiandae.
+                        </p>
+                        <button type="submit">APPLY HERE</button>
                     </div>
-                    <div>
-                        <img src="/big-photo.png" alt="bphoto1">
+                </section>
+            </div>
+        </article>
+
+        <article class="top-section">
+            <div class="wrapper">
+                <div class="left">
+                    <div class="first">
+                        <div class="image">
+                            <img src="/cover-photo.png" alt="coverphoto">
+                        </div>
+
+                        <div class="big-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, inventore, numquam
+                                consectetur sed
+                                tempora dolores quos soluta velit dignissimos repudiandae debitis corrupti laudantium
+                                minima
+                                maxime temporibus quis voluptates quo quas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <div class="logo">
+                            <img src="/cover-icon.png" alt="icon">
+                        </div>
+
+                        <div class="small-text">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        </div>
+
+                        <div class="image">
+                            <img src="/cover-sm.png" alt="forest">
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="photo-pairs">
-                    <div>
-                        <img src="/small-photo2.png" alt="sphoto2">
-                    </div>
-                    <div>
-                        <img src="/big-photo2.png" alt="bphoto2">
-                    </div>
-                </div>
-            </div>
+                <div class="right">
+                    <div class="first">
+                        <div class="image">
+                            <img src="/Rectangle 1.png" alt="bphoto1">
+                        </div>
 
-            <div class="photo-group">
-                <div class="photo-pairs">
-                    <div style="background-color: yellow;">1</div>
-                    <div style="background-color: red;">2</div>
-                </div>
-                <div class="photo-pairs">
-                    <div style="background-color: green;">3</div>
-                    <div style="background-color: blue;">4</div>
-                </div>
-            </div>
+                        <div class="image">
+                            <img src="Rectangle 2.png" alt="bphoto1">
+                        </div>
 
-            <div class="photo-group">
-                <div class="photo-pairs">
-                    <div style="background-color: yellow;">1</div>
-                    <div style="background-color: red;">2</div>
-                </div>
-                <div class="photo-pairs">
-                    <div style="background-color: green;">3</div>
-                    <div style="background-color: blue;">4</div>
+                        <div class="logo">
+                            <img src="/diamond-cover.png" alt="diamond">
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <div class="logo">
+                            <img src="/winner.png" alt="winner">
+                        </div>
+
+                        <div class="big-text">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam hic recusandae
+                                quisquam, incidunt
+                                illum fugiat reiciendis consequatur tenetur enim vel blanditiis cum. Quas soluta dicta
+                                consequuntur
+                                dolore! Veniam, enim vitae.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>    
+        </article>
+
+        <article class="bottom-section">
+            <div class="wrapper">
+                <div class="left">
+                    <div class="first">
+                        <div class="image">
+                            <img src="/city.png" alt="city">
+                        </div>
+
+                        <div class="logo">
+                            <img src="/image.png" alt="image">
+                        </div>
+
+                        <div class="logo">
+                            <img src="/Vector.png" alt="vector">
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <div class="big-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusamus eius magni ad
+                                quasi
+                                repellat? Explicabo quam facere dolores voluptate labore, omnis doloremque laudantium
+                                sequi
+                                earum deserunt quae blanditiis aliquid!
+                            </p>
+                        </div>
+
+                        <div class="image">
+                            <img src="/grill.png" alt="grill">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="first">
+                        <div class="big-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt tenetur quae ad
+                                deserunt nulla
+                                veritatis mollitia eaque optio officiis voluptatem ex voluptas, dolor ea laboriosam aut
+                                suscipit
+                                sequi autem facere.
+                            </p>
+                        </div>
+
+                        <div class="image">
+                            <img src="/photo.png" alt="photo">
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <div class="image">
+                            <img src="/portrait.png" alt="portrait">
+                        </div>
+
+                        <div class="logo">
+                            <img src="/logoipsum-220 1.png" alt="logoipsum2">
+                        </div>
+
+                        <div class="small-text">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="footer-top">
+            <div class="footer-layout">
+                <div class="footer-logo">
+                    <img src="/Logo1.png" alt="logo1">
+                </div>
+                <p>Some information about this company.</p>
+                <div class="social-links">
+                    <input type="button" class="facebook">
+                    <input type="button" class="google">
+                    <input type="button" class="twitter">
+                    <input type="button" class="linkedin">
+                </div>
+            </div>
+        </article>
+
+        <article class="footer-bottom">
+            <div class="wrapper">
+                <div class="footer-left">
+                    <p>1234 NW Bobcat Lane, SL Robert, MO 65584-5478</p>
+                </div>
+                <div class="footer-right">
+                    <p>2022&copy; All rights reserved.</p>
+                </div>
+            </div>
+        </article>
     </main>
 </body>
+
 </html>
-    
-
-
